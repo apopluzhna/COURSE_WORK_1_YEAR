@@ -56,7 +56,6 @@ export default class Game extends React.Component {
       );
     });
 
-
     let status;
     if (winner) {
       status = 'WINNER ' + winner;
