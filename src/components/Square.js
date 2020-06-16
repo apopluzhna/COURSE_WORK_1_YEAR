@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Square.css'
-import PropTypes                   from 'prop-types';
+import PropTypes from 'prop-types';
 
 function Square(props) {
   return (
@@ -13,7 +13,7 @@ function Square(props) {
 Square.propTypes = {
   onClick : PropTypes.func,
   value : PropTypes.string
-}
+};
 
 export default Square
 
