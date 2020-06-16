@@ -40,3 +40,4 @@ export default class Board extends React.Component {
     onClick : PropTypes.func,
     squares : PropTypes.string
   }
+                                             
