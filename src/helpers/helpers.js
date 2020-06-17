@@ -11,8 +11,12 @@ export default function calculateWinner(squares) {
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-        return squares[a];
+      const cell1 = squares[a];
+      const cell2 = squares[b];
+      const cell3 = squares[c];
+      const condition = cell1&&cell1===cell2&&cell1===cell3;
+        if (condition) {
+          return cell1;
       }
     }
     return null;
