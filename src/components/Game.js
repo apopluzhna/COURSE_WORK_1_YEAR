@@ -50,13 +50,8 @@ export default class Game extends React.Component {
       );
     });
 
-    let status;
-    if (winner) {
-      status = 'WINNER ' + winner;
-    } else {
-      status = 'NEXT TURN: ' + (this.state.xIsNext ? 'X' : 'O');
-    }
-
+    let status = winner ? 'WINNER ' + winner : 'NEXT TURN: ' + (this.state.xIsNext ? 'X' : 'O');
+    
     return (
       <div className="game">
         <div className="game-board">
