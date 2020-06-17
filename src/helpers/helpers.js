@@ -15,9 +15,7 @@ export default function calculateWinner(squares) {
      const cell2 = squares[b];
      const cell3 = squares[c];
      const condition = cell1&&cell1===cell2&&cell1===cell3;
-      if (condition) {
-        return cell1;
-      }
+      if (condition) return cell1;
     }
     return null;
   }
