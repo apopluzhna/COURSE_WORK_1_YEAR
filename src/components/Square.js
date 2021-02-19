@@ -1,11 +1,19 @@
 import React from 'react';
 import '../style/Square.css'
-export default class Square extends React.Component {
-    render() {
-      return (
-        <button className="square">
-          {/* TODO */}
-        </button>
-      );
-    }
-  }
+import PropTypes from 'prop-types';
+
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
+
+Square.propTypes = {
+  onClick : PropTypes.func,
+  value : PropTypes.string
+};
+
+export default Square
+
